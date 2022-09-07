@@ -6,15 +6,32 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: チェックアウト
+        uses: actions/checkout@v3
         with:
-          submodules: true
-      - uses: klakegg/actions-hugo@1.0.0
+          # サブモジュールも取得
+          submodules: recursive
+          fetch-depth: 0
+      - name: hugoドキュメントのビルド
+        # 参考：https://github.com/klakegg/actions-hugo/blob/master/action.yml
+        # 参考：
+        uses: klakegg/actions-hugo@1.0.0
         with:
           target: public
           source: .
-      - uses: peaceiris/actions-gh-pages@v3
+          # docsyテーマの依存関係にはSASS, SCSSが含まれる
+          # SASS,SCSSをcssに変換するにはhugo extended versionが必要
+          # 参考：https://gohugo.io/troubleshooting/faq/#i-get--this-feature-is-not-available-in-your-current-hugo-version
+          image: ext-ubuntu
+          # Dev Conatinerで利用するHugoバージョンに合わせる
+          version: 0.101.0
+          # 公開ページのみをビルド
+          env: production
+      - name: GitHub Pagesに公開
+        uses: peaceiris/actions-gh-pages@v3
+        # mainブランチ時のみ実施
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          # ./publicは以下のドキュメントを公開
           publish_dir: ./public
