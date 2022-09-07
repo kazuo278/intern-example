@@ -1,0 +1,5 @@
+baseURL = 'https://kazuo278.github.io/intern-example/'
+languageCode = 'ja'
+title = 'My New Hugo Site'
+canonifyurls = true
+theme = "ananke"
