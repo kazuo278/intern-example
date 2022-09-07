@@ -1,4 +1,4 @@
-baseURL = "/intern-example/"
+baseURL = "/"
 title = "My New Hugo Site"
 
 # 利用するテーマ
