@@ -1,5 +1,7 @@
 baseURL = "/"
 title = "My New Hugo Site"
+# デフォルトでは画像がhost名からの相対パスで記載され個別ページで404となるケースがあるため絶対パスとして扱う
+canonifyurls = true
 
 # 利用するテーマ
 theme = ["docsy"]
