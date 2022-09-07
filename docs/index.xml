@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Site – Markdown によるドキュメント管理の紹介</title>
-    <link>/intern-example/docs/</link>
+    <link>/docs/</link>
     <description>Recent content in Markdown によるドキュメント管理の紹介 on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 08 Jul 2022 05:01:41 +0000</lastBuildDate>
     
-	  <atom:link href="/intern-example/docs/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docs/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: What Is Markdown</title>
-      <link>/intern-example/docs/what_is_markdown/</link>
+      <link>/docs/what_is_markdown/</link>
       <pubDate>Fri, 08 Jul 2022 05:01:41 +0000</pubDate>
       
-      <guid>/intern-example/docs/what_is_markdown/</guid>
+      <guid>/docs/what_is_markdown/</guid>
       <description>
         
         
@@ -51,10 +51,10 @@
     
     <item>
       <title>Docs: ドキュメント更新ハンズオン</title>
-      <link>/intern-example/docs/handson/</link>
+      <link>/docs/handson/</link>
       <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>/intern-example/docs/handson/</guid>
+      <guid>/docs/handson/</guid>
       <description>
         
         
