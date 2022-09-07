@@ -4,10 +4,7 @@ on:
     branch: [main]
 
 env:
-  # 環境変数を指定することにより、baseURLを変更
-  # GitHub Pageでは公開URLが、https://<ユーザ名>.github.io/<リポジトリ名>/となるため
-  # 参考：https://gohugo.io/getting-started/configuration/#configure-with-environment-variables
-  HUGO_BASEURL: intern-example/
+  HUGO_BASEURL: https://kazuo278.github.io/intern-example/
 
 jobs:
   build-and-deploy:
@@ -35,6 +32,9 @@ jobs:
           version: 0.101.0
           # 公開ページのみをビルド
           env: production
+          # baseURLを変更
+          # GitHub Pageでは公開URLが、https://<ユーザ名>.github.io/<リポジトリ名>/となるため
+          command: -b ${{ env.HUGO_BASEURL}}
       - name: GitHub Pagesに公開
         # GitHub Pagesへの公開は、ブランチ方式とGitHub Actions(Beta)がある
         # ここではブランチ方式を採用する
