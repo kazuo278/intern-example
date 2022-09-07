@@ -2,28 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>intern-example/docs/what_is_markdown/</loc>
+    <loc>https://kazuo278.github.io/intern-example/docs/what_is_markdown/</loc>
     <lastmod>2022-07-08T05:01:41+00:00</lastmod>
   </url><url>
-    <loc>intern-example/docs/document-for-git/</loc>
+    <loc>https://kazuo278.github.io/intern-example/docs/document-for-git/</loc>
     <lastmod>2022-09-02T05:42:11+00:00</lastmod>
   </url><url>
-    <loc>intern-example/docs/handson/</loc>
+    <loc>https://kazuo278.github.io/intern-example/docs/handson/</loc>
     <lastmod>2022-09-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>intern-example/</loc>
+    <loc>https://kazuo278.github.io/intern-example/</loc>
     <lastmod>2022-09-02T05:42:11+00:00</lastmod>
   </url><url>
-    <loc>intern-example/docs/</loc>
+    <loc>https://kazuo278.github.io/intern-example/docs/</loc>
     <lastmod>2022-07-08T05:01:41+00:00</lastmod>
   </url><url>
-    <loc>intern-example/search/</loc>
+    <loc>https://kazuo278.github.io/intern-example/search/</loc>
     <lastmod>2022-07-08T05:01:41+00:00</lastmod>
   </url><url>
-    <loc>intern-example/search/data.js</loc>
+    <loc>https://kazuo278.github.io/intern-example/search/data.js</loc>
   </url><url>
-    <loc>intern-example/categories/</loc>
+    <loc>https://kazuo278.github.io/intern-example/categories/</loc>
   </url><url>
-    <loc>intern-example/tags/</loc>
+    <loc>https://kazuo278.github.io/intern-example/tags/</loc>
   </url>
 </urlset>
