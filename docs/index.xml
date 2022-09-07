@@ -339,9 +339,9 @@
     </item>
     
     <item>
-      <title>Docs: </title>
+      <title>Docs: CICD</title>
       <link>https://kazuo278.github.io/intern-example/docs/cicd/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 02 Sep 2022 05:42:11 +0000</pubDate>
       
       <guid>https://kazuo278.github.io/intern-example/docs/cicd/</guid>
       <description>
@@ -472,27 +472,9 @@
     </item>
     
     <item>
-      <title>Docs: </title>
-      <link>https://kazuo278.github.io/intern-example/docs/google-analytics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kazuo278.github.io/intern-example/docs/google-analytics/</guid>
-      <description>
-        
-        
-        &lt;h1 id=&#34;google-analytics&#34;&gt;Google Analytics&lt;/h1&gt;
-&lt;p&gt;PV数取得で利用検討。&lt;/p&gt;
-&lt;p&gt;##　調査結果&lt;/p&gt;
-&lt;p&gt;以下の理由から利用を断念。&lt;br&gt;
-Google Analyticsがビジネス利用前提で作られており、登録時にビジネス情報を入れる必要があったが、入力すべき相応しい情報がなかったため。&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: </title>
+      <title>Docs: Google Forms</title>
       <link>https://kazuo278.github.io/intern-example/docs/google-forms/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 02 Sep 2022 05:42:11 +0000</pubDate>
       
       <guid>https://kazuo278.github.io/intern-example/docs/google-forms/</guid>
       <description>
@@ -515,6 +497,24 @@ Google Analyticsがビジネス利用前提で作られており、登録時に�
 &lt;p&gt;「送信」→「&amp;lt; &amp;gt;」とたどり埋め込みリンクを取得する&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Google Analytics</title>
+      <link>https://kazuo278.github.io/intern-example/docs/google-analytics/</link>
+      <pubDate>Fri, 02 Sep 2022 05:42:11 +0000</pubDate>
+      
+      <guid>https://kazuo278.github.io/intern-example/docs/google-analytics/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;google-analytics&#34;&gt;Google Analytics&lt;/h1&gt;
+&lt;p&gt;PV数取得で利用検討。&lt;/p&gt;
+&lt;p&gt;##　調査結果&lt;/p&gt;
+&lt;p&gt;以下の理由から利用を断念。&lt;br&gt;
+Google Analyticsがビジネス利用前提で作られており、登録時にビジネス情報を入れる必要があったが、入力すべき相応しい情報がなかったため。&lt;/p&gt;
 
       </description>
     </item>
