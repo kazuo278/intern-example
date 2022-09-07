@@ -26,6 +26,18 @@ var data = [
     body: "My New Hugo Site"
   },
   {
+    url: "https://kazuo278.github.io/intern-example/feedback/",
+    title: "feedback",
+    date: "2022-07-08T05:01:41Z",
+    body: "feedback"
+  },
+  {
+    url: "https://kazuo278.github.io/intern-example/issue/",
+    title: "issue",
+    date: "2022-07-08T05:01:41Z",
+    body: "issue"
+  },
+  {
     url: "https://kazuo278.github.io/intern-example/docs/",
     title: "Markdown によるドキュメント管理の紹介",
     date: "2022-07-08T05:01:41Z",
