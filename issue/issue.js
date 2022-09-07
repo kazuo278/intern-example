@@ -1,3 +1,6 @@
+// リポジトリ ISSUE URL :TODO リポジトリごとに変更が必要
+const REPO_ISSUE_URL = "https://api.github.com/repos/kazuo278/intern-example/issues";
+
 // メッセージ表示領域(div)のID
 const messageAreaId = "msg-area";
 // メッセージ表示List(ul)のID
@@ -17,7 +20,7 @@ const createIssue = () => {
   clearMassage();
   // 各種変数定義
   // ISSUE作成APIのURI
-  const uri = "https://api.github.com/repos/kazuo278/intern-example/issues";
+  const uri = REPO_ISSUE_URL;
   // inputからPATを取得
   let pat = document.getElementById("pat");
   // inputからタイトルを取得
