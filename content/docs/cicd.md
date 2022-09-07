@@ -1,6 +1,11 @@
+---
+title: "CICD"
+date: 2022-09-02T05:42:11Z
+weight: 30
+---
 # CICD
 
-##　実現したこと
+## 実現したこと
 
 - mainブランチPush時に以下を実行
   - checkout
