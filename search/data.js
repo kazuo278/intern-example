@@ -23,7 +23,7 @@ var data = [
     url: "https://kazuo278.github.io/intern-example/docs/cicd/",
     title: "CICD",
     date: "2022-09-02T05:42:11Z",
-    body: "CICD CICD ##　実現したこと mainブランチPush時に以下を実行 checkout hugoドキュメントのビルド GitHub Pagesに公開 ハマりそうなポイント checkout submodulesオプションでrecursive指定が必要 理由 trueでは、１階層のサブモジュールしかひっぱってこないっぽい。 利用するテーマがさらに別のサブモジュールを参照している場合はrecursiveが指定必要。 想定される事象 github actionsで、テーマが参照するリソースが存在しない旨のエラーがでる Hugoドキュメントのビルド commandオプションで-b https://\u0026lt;ユーザ名\u0026gt;.github.io/\u0026lt;リポジトリ名\u0026gt;指定が必要 理由 ローカルでのbaseURLはconfig.tomlで\\が指定されている。 しかし、GitHub Pagesに公開するとURLがhttps://\u0026lt;ユーザ名\u0026gt;.github.io/\u0026lt;リポジトリ名\u0026gt;となるため、baseURLを明示的に合わせる必要がある 想定される事象 GitHub Pagesでページ遷移できない。（404） imageオプションでは、ext-xxxという名前のイメージを使う 理由 テーマでSCSS、SASSを利用している場合、ビルドができない。 extendedバージョンを利用する必要がある 想定される事象 ビルドに失敗 備考 Dev Containerと同様のイメージが好ましい。(環境に差異が出ない) image: ext-ubuntu version: 0.101.0 config.tomlにcanonifyurls = trueを追加する 理由 これにより、画像の参照先やページ遷移先が絶対パス形式になる 想定される事象 GitHub Pagesから画像参照できない（404） 詳細は未確認だが、Shortcode 方式で画像参照、かつ、basuURLを指定すると、html描画後の画像のパスにbaseURLが反映されていないことがあった 前提条件 baseURL=https://\u0026lt;ユーザ名\u0026gt;.github.io/\u0026lt;リポジトリ名\u0026gt;/ canonifyurls = false(未定義) 期待する値 https://\u0026lt;ユーザ名\u0026gt;.github.io/\u0026lt;リポジトリ名\u0026gt;/images/xxxx.png 実際の値 https://\u0026lt;ユーザ名\u0026gt;.github.io/images/xxxx.png 備考 ローカルで動作確認するときもGitHub Pagesに公開するときと合わせて、以下のコマンドで起動すると良さそう。 $ hudo -b http://localhost:1313/\u0026lt;リポジトリ名\u0026gt;/ server"
+    body: "CICD CICD 実現したこと mainブランチPush時に以下を実行 checkout hugoドキュメントのビルド GitHub Pagesに公開 ハマりそうなポイント checkout submodulesオプションでrecursive指定が必要 理由 trueでは、１階層のサブモジュールしかひっぱってこないっぽい。 利用するテーマがさらに別のサブモジュールを参照している場合はrecursiveが指定必要。 想定される事象 github actionsで、テーマが参照するリソースが存在しない旨のエラーがでる Hugoドキュメントのビルド commandオプションで-b https://\u0026lt;ユーザ名\u0026gt;.github.io/\u0026lt;リポジトリ名\u0026gt;指定が必要 理由 ローカルでのbaseURLはconfig.tomlで\\が指定されている。 しかし、GitHub Pagesに公開するとURLがhttps://\u0026lt;ユーザ名\u0026gt;.github.io/\u0026lt;リポジトリ名\u0026gt;となるため、baseURLを明示的に合わせる必要がある 想定される事象 GitHub Pagesでページ遷移できない。（404） imageオプションでは、ext-xxxという名前のイメージを使う 理由 テーマでSCSS、SASSを利用している場合、ビルドができない。 extendedバージョンを利用する必要がある 想定される事象 ビルドに失敗 備考 Dev Containerと同様のイメージが好ましい。(環境に差異が出ない) image: ext-ubuntu version: 0.101.0 config.tomlにcanonifyurls = trueを追加する 理由 これにより、画像の参照先やページ遷移先が絶対パス形式になる 想定される事象 GitHub Pagesから画像参照できない（404） 詳細は未確認だが、Shortcode 方式で画像参照、かつ、basuURLを指定すると、html描画後の画像のパスにbaseURLが反映されていないことがあった 前提条件 baseURL=https://\u0026lt;ユーザ名\u0026gt;.github.io/\u0026lt;リポジトリ名\u0026gt;/ canonifyurls = false(未定義) 期待する値 https://\u0026lt;ユーザ名\u0026gt;.github.io/\u0026lt;リポジトリ名\u0026gt;/images/xxxx.png 実際の値 https://\u0026lt;ユーザ名\u0026gt;.github.io/images/xxxx.png 備考 ローカルで動作確認するときもGitHub Pagesに公開するときと合わせて、以下のコマンドで起動すると良さそう。 $ hudo -b http://localhost:1313/\u0026lt;リポジトリ名\u0026gt;/ server"
   },
   {
     url: "https://kazuo278.github.io/intern-example/docs/google-forms/",
@@ -35,7 +35,7 @@ var data = [
     url: "https://kazuo278.github.io/intern-example/docs/google-analytics/",
     title: "Google Analytics",
     date: "2022-09-02T05:42:11Z",
-    body: "Google Analytics Google Analytics PV数取得で利用検討。 ##　調査結果 以下の理由から利用を断念。 Google Analyticsがビジネス利用前提で作られており、登録時にビジネス情報を入れる必要があったが、入力すべき相応しい情報がなかったため。"
+    body: "Google Analytics Google Analytics PV数取得で利用検討。 調査結果 以下の理由から利用を断念。 Google Analyticsがビジネス利用前提で作られており、登録時にビジネス情報を入れる必要があったが、入力すべき相応しい情報がなかったため。"
   },
   {
     url: "https://kazuo278.github.io/intern-example/",

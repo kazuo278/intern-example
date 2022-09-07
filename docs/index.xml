@@ -348,7 +348,7 @@
         
         
         &lt;h1 id=&#34;cicd&#34;&gt;CICD&lt;/h1&gt;
-&lt;p&gt;##　実現したこと&lt;/p&gt;
+&lt;h2 id=&#34;実現したこと&#34;&gt;実現したこと&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;mainブランチPush時に以下を実行
 &lt;ul&gt;
@@ -484,12 +484,12 @@
 &lt;p&gt;フィードバックようページとして用意。&lt;/p&gt;
 &lt;h2 id=&#34;手順&#34;&gt;手順&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Googleアカウントでログイン後以下にアクセス&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;
+&lt;p&gt;Googleアカウントでログイン後以下にアクセス&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.google.com/forms/u/0/?tgif=d&#34;&gt;https://docs.google.com/forms/u/0/?tgif=d&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;ol&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;フォームを適当に作成&lt;/p&gt;
 &lt;/li&gt;
@@ -512,7 +512,7 @@
         
         &lt;h1 id=&#34;google-analytics&#34;&gt;Google Analytics&lt;/h1&gt;
 &lt;p&gt;PV数取得で利用検討。&lt;/p&gt;
-&lt;p&gt;##　調査結果&lt;/p&gt;
+&lt;h2 id=&#34;調査結果&#34;&gt;調査結果&lt;/h2&gt;
 &lt;p&gt;以下の理由から利用を断念。&lt;br&gt;
 Google Analyticsがビジネス利用前提で作られており、登録時にビジネス情報を入れる必要があったが、入力すべき相応しい情報がなかったため。&lt;/p&gt;
 
