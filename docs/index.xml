@@ -50,6 +50,180 @@
     </item>
     
     <item>
+      <title>Docs: Document for Git</title>
+      <link>/docs/document-for-git/</link>
+      <pubDate>Fri, 02 Sep 2022 05:42:11 +0000</pubDate>
+      
+      <guid>/docs/document-for-git/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;gitによるdocumentの管理のすゝめ&#34;&gt;GitによるDocumentの管理のすゝめ&lt;/h1&gt;
+&lt;h2 id=&#34;従来のドキュメント管理の方法&#34;&gt;従来のドキュメント管理の方法&lt;/h2&gt;
+&lt;h3 id=&#34;こんなドキュメント管理してませんか&#34;&gt;こんなドキュメント管理してませんか？&lt;/h3&gt;
+
+&lt;figure&gt;
+    &lt;img src=&#34;/images/folder.drawio.svg&#34;
+         alt=&#34;従来のドキュメント管理&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日付ごとのフォルダで管理&lt;/li&gt;
+&lt;li&gt;同じ資料を色々な場所に配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;このような管理では&#34;&gt;このような管理では…&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;(最新の)資料がどこにあるか探しにくい！&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;前回との差分が何か分かりにくい！&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;そこで、Gitによるドキュメント管理はいかがでしょうか。&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;gitによるドキュメント管理とは&#34;&gt;Gitによるドキュメント管理とは…?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Markdown形式で記載したドキュメントをGitリポジトリで管理すること&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;gitとは&#34;&gt;Gitとは…?&lt;/h3&gt;
+&lt;p&gt;チーム開発における同時更新を防ぐために、ソースコードなどの変更履歴を記録するバージョン管理システム。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;管理対象リソースは、&lt;strong&gt;リモートリポジトリ&lt;/strong&gt;と呼ばれる場所に保管される。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;編集時&lt;/strong&gt;、開発(編集)者はリモートリポジトリの複製(ローカルリポジトリ)を作成し、&lt;strong&gt;ローカルリポジトリを更新する&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;作業完了後&lt;/strong&gt;、開発(編集)者はローカルリポジトリの内容を&lt;strong&gt;リモートリポジトリに反映する&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+    &lt;img src=&#34;/images/git.drawio.svg&#34;
+         alt=&#34;git&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;gitでできること&#34;&gt;Gitでできること&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;ファイルの変更履歴(更新日、更新者、更新箇所)管理&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;過去の状態に簡単に戻せる。&lt;/li&gt;
+&lt;li&gt;差分がわかりやすい。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;プル(マージ)リクエストによるレビュー&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+    &lt;img src=&#34;/images/git_tools.drawio.png&#34;
+         alt=&#34;git pr&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;従来のドキュメント管理の課題解決&#34;&gt;従来のドキュメント管理の課題解決&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;(最新の)資料がどこにあるか探しにくい！&lt;br&gt;
+→ &lt;strong&gt;ファイルが一元管理されるので、いつも同じ場所に最新の資料がある！&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;前回との差分が何か分かりにくい！&lt;br&gt;
+→ &lt;strong&gt;変更履歴が残るので更新差分が分かりやすい！&lt;/strong&gt;
+→ &lt;strong&gt;レビューの仕組みがあるので差分に対しコメントしやすい！&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Gitリモートリポジトリ&lt;/strong&gt;、&lt;strong&gt;Gitコマンド&lt;/strong&gt;、&lt;strong&gt;エディタ&lt;/strong&gt;(VSCodeがおすすめ)があれば作成可能！&lt;/p&gt;
+&lt;p&gt;リモートリポジトリは&lt;strong&gt;Markdwon&lt;/strong&gt;形式で書かれたドキュメントをHTMLに変換し描画することができるため、ドキュメントは&lt;strong&gt;Markdown記法で作成&lt;/strong&gt;する。&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&#34;/images/md.drawio.png&#34;
+         alt=&#34;markdown&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;gitによるドキュメント管理方法-レビュー機能mrpr活用&#34;&gt;Gitによるドキュメント管理方法 ~レビュー機能(MR,PR)活用~&lt;/h2&gt;
+&lt;p&gt;■ ブランチ戦略例&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&#34;/images/branch_strategy_github-flow.drawio.svg&#34;
+         alt=&#34;git branch strategy&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;ブランチ名&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;役割&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;master/main&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;常にレビュー済みの最新のドキュメントを管理するブランチ。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;feature&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;個別の作業を行うブランチ。コンテンツや章などの単位で作成する。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;gitによるドキュメント管理への疑念&#34;&gt;Gitによるドキュメント管理への疑念&lt;/h2&gt;
+&lt;p&gt;Gitでドキュメント管理できることは分かったけど…&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;画像の作成や編集はできないんでしょう…？&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;markdownでは、jpgやpng, svgといった画像形式を描画できるけど、
+画像自体は別のツールで作ってmarkdownで表示するんでしょ…めんどくさそう。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;スライドで発表する場合は向いてなくない…？&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;markdownで書いても、発表時にはpowerpointで作成し直すの大変そう&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;gitによるドキュメント管理への疑念-画像作成編集&#34;&gt;Gitによるドキュメント管理への疑念 ~画像作成・編集~&lt;/h2&gt;
+&lt;p&gt;VSCodeには、&lt;code&gt;Draw.io Integration&lt;/code&gt;という拡張機能が用意されており、&lt;strong&gt;VSCodeから直接の画像作成・編集可能&lt;/strong&gt;です！&lt;/p&gt;
+&lt;p&gt;また、これにより&lt;strong&gt;画像データもバージョン管理可能&lt;/strong&gt;に！
+(パワポだと画像が図として保存されている場合があったりする…)&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&#34;/images/drawio.drawio.png&#34;
+         alt=&#34;drawio&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;gitによるドキュメント管理への疑念-スライド作成&#34;&gt;Gitによるドキュメント管理への疑念 ~スライド作成~&lt;/h2&gt;
+&lt;p&gt;VSCodeには、&lt;code&gt;Marp for VS Code&lt;/code&gt;という拡張機能が用意されており、Markdownで記載されたドキュメントをスライド(pdf)に変換です！&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&#34;/images/marp.drawio.png&#34;
+         alt=&#34;height:295&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;p&gt;ただし、Powerpointのように&lt;strong&gt;画像や文字を直観的に配置できない&lt;/strong&gt;など課題もあります。
+→&lt;strong&gt;スライドを作成することが目的な場合やリッチなスライドの作成には向いていなそう&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;最後に&#34;&gt;最後に&lt;/h2&gt;
+&lt;h3 id=&#34;gitによるドキュメント管理&#34;&gt;Gitによるドキュメント管理&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Markdownで作成したDocumentをGitリポジトリで管理する。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;メリット&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;デメリット&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;・いつも同じ場所に最新の資料がある&lt;br&gt;・レビューがしやすい&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;・パワポやその他形式への変換はまだまだ難しい&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;私が考えるgitドキュメント管理の使いどころ&#34;&gt;私が考えるGitドキュメント管理の使いどころ&lt;/h3&gt;
+&lt;p&gt;すべてのドキュメントをGit管理するのではなく、まずは &lt;strong&gt;テンプレート指定のない内部向け文書(運用手順書、システム構成)&lt;/strong&gt; からGitでのドキュメント管理を初めてみてはいかがでしょうか。&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: ドキュメント更新ハンズオン</title>
       <link>/docs/handson/</link>
       <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
