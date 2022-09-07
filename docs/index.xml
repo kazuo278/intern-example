@@ -1,0 +1,168 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site – Markdown によるドキュメント管理の紹介</title>
+    <link>/docs/</link>
+    <description>Recent content in Markdown によるドキュメント管理の紹介 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 08 Jul 2022 05:01:41 +0000</lastBuildDate>
+    
+	  <atom:link href="/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: What Is Markdown</title>
+      <link>/docs/what_is_markdown/</link>
+      <pubDate>Fri, 08 Jul 2022 05:01:41 +0000</pubDate>
+      
+      <guid>/docs/what_is_markdown/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;markdownとは&#34;&gt;Markdownとは？&lt;/h2&gt;
+&lt;p&gt;Markdownは、プレーンテキストテキストドキュメントに書式設定要素を追加するために使用できる軽量マークアップ言語です。  現在、世界で最も人気のあるマークアップ言語の1つです。&lt;/p&gt;
+&lt;h2 id=&#34;なぜmarkdownを使うのか&#34;&gt;なぜMarkdownを使うのか？&lt;/h2&gt;
+&lt;p&gt;人々がMarkdownを使用する理由はいくつかあります。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;マークダウンはすべてに使用できます。人々はそれを使用して、Webサイト、ドキュメント、メモ、書籍、プレゼンテーション、電子メールメッセージ、および技術ドキュメントを作成します。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Markdownはポータブルです。マークダウン形式のテキストを含むファイルは、事実上すべてのアプリケーションを使用して開くことができます。現在使用しているMarkdownアプリケーションが気に入らない場合は、Markdownファイルを別のMarkdownアプリケーションにインポートできます。これは、コンテンツを独自のファイル形式にロックするMicrosoftWordのようなワードプロセッシングアプリケーションとはまったく対照的です。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Markdownはプラットフォームに依存しません。任意のオペレーティングシステムを実行している任意のデバイスで、マークダウン形式のテキストを作成できます。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;値下げは将来の保証です。使用しているアプリケーションが将来的に機能しなくなった場合でも、テキスト編集アプリケーションを使用して、マークダウン形式のテキストを読み取ることができます。これは、本、大学の論文、および無期限に保存する必要があるその他のマイルストーンドキュメントに関して重要な考慮事項です。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;値下げはいたるところにあります。RedditやGitHubなどのWebサイトはMarkdownをサポートしており、多くのデスクトップおよびWebベースのアプリケーションがMarkdownをサポートしています。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;内容に不備がある場合は&lt;a href=&#34;../../feedback.html&#34;&gt;こちら&lt;/a&gt;まで&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: ドキュメント更新ハンズオン</title>
+      <link>/docs/handson/</link>
+      <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/handson/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;ゴール&#34;&gt;ゴール&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Markdown の基本的な記法が理解できる&lt;/li&gt;
+&lt;li&gt;VS Code Remote Continer 上の Hugo で Markdown を Web サイトコンテンツに変換できる&lt;/li&gt;
+&lt;li&gt;GitHub Action を利用する方法がわかる&lt;/li&gt;
+&lt;li&gt;【Want】 Hugo の設定を変更して、Web サイトコンテンツをカスタマイズできる&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;目次&#34;&gt;目次&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;VS Code Remote Container で Hugo を動かしてみよう&lt;/li&gt;
+&lt;li&gt;Markdown でドキュメントを書いてみよう&lt;/li&gt;
+&lt;li&gt;自由練習１～　好きに Markdown を書いて、Web サイトに記事を追加してみましょう&lt;/li&gt;
+&lt;li&gt;GitHubAction で作業を自動化してみよう&lt;/li&gt;
+&lt;li&gt;自由練習２&lt;/li&gt;
+&lt;li&gt;Hugo の設定を変更して、Web サイトコンテンツをカスタマイズしてみよう&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;vs-code-remote-container-で-hugo-を動かしてみよう&#34;&gt;VS Code Remote Container で Hugo を動かしてみよう&lt;/h2&gt;
+&lt;p&gt;VS Code Remote Continer の設定がされた Git リポジトリをクローンして、さっそく Hugo がどんなものなのか体験してみましょう&lt;/p&gt;
+&lt;h3 id=&#34;a-windows端末&#34;&gt;(A) Windows端末&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;WSL2 を起動します（Windowsキーを押下→Ubuntuを入力）&lt;/li&gt;
+&lt;li&gt;Docker を起動しておきます： &lt;code&gt;sudo service docker start&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;任意の作業用のフォルダに移動します（例：ホームディレクトリでよければ &lt;code&gt;cd&lt;/code&gt; を打てばＯＫ）&lt;/li&gt;
+&lt;li&gt;演習用の GitHub リポジトリを取得します（ &lt;code&gt;git clone --recursive https://github.com/kazuo278/hugo-sample.git&lt;/code&gt; ）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cd hugo-sample&lt;/code&gt; でリポジトリに移動します&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;code .&lt;/code&gt; で VS Code を起動します(初めて実行する場合はインストールが発生します)&lt;/li&gt;
+&lt;li&gt;もし、VSCode を起動した際に信頼するかの警告が出たら「はい、作成者を信頼します」を選択します&lt;/li&gt;
+&lt;li&gt;右下に「Folder containes a Dev Container configuration file&amp;hellip;」というポップアップが出たら「Reopen in Container」を選択します&lt;/li&gt;
+&lt;li&gt;開発用のコンテナが起動するまで待ちます（初回は時間がかかります）&lt;/li&gt;
+&lt;li&gt;上部メニュー＞ターミナル＞新しいターミナルを選択します&lt;/li&gt;
+&lt;li&gt;開いたターミナルで &lt;code&gt;hugo server -w&lt;/code&gt; のコマンドを実行します&lt;/li&gt;
+&lt;li&gt;ブラウザで「&lt;a href=&#34;http://localhost:1313/hugo-sample/&#34;&gt;http://localhost:1313/hugo-sample/&lt;/a&gt;」を開きます&lt;/li&gt;
+&lt;li&gt;md ファイルの１つを更新して保存したときに、すぐにブラウザ側に反映されていることを確認します&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;b-mac端末&#34;&gt;(B) Mac端末&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;VSCodeを起動します&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;shift + command + p&lt;/code&gt; を押します&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;shell command&lt;/code&gt;を入力し、「Shell Command: Install &amp;lsquo;code&amp;rsquo; command in PATH」を選択します。&lt;/li&gt;
+&lt;li&gt;Docker Desktopを起動します。&lt;/li&gt;
+&lt;li&gt;ターミナルを開き、任意の作業用のフォルダに移動します（例：ホームディレクトリでよければ &lt;code&gt;cd&lt;/code&gt; を打てばＯＫ）&lt;/li&gt;
+&lt;li&gt;演習用の GitHub リポジトリを取得します（ &lt;code&gt;git clone --recursive https://github.com/kazuo278/hugo-sample.git&lt;/code&gt; ）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cd hugo-sample&lt;/code&gt; でリポジトリに移動します&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;code .&lt;/code&gt; で VS Code を起動します&lt;br&gt;
+うまくいかない場合は、VSCodeの「File -&amp;gt; Open Folder」から取得したリポジトリを選択してください。&lt;/li&gt;
+&lt;li&gt;もし、VSCode を起動した際に信頼するかの警告が出たら「はい、作成者を信頼します」を選択します&lt;/li&gt;
+&lt;li&gt;右下に「Folder containes a Dev Container configuration file&amp;hellip;」というポップアップが出たら「Reopen in Container」を選択します&lt;/li&gt;
+&lt;li&gt;開発用のコンテナが起動するまで待ちます（初回は時間がかかります）&lt;/li&gt;
+&lt;li&gt;上部メニュー＞ターミナル＞新しいターミナルを選択します(&lt;code&gt;ctrl + shift + @&lt;/code&gt; でも可)&lt;/li&gt;
+&lt;li&gt;開いたターミナルで &lt;code&gt;hugo server -w&lt;/code&gt; のコマンドを実行します&lt;/li&gt;
+&lt;li&gt;ブラウザで「&lt;a href=&#34;http://localhost:1313/hugo-sample/&#34;&gt;http://localhost:1313/hugo-sample/&lt;/a&gt;」を開きます&lt;/li&gt;
+&lt;li&gt;md ファイルの１つを更新して保存したときに、すぐにブラウザ側に反映されていることを確認します&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;markdwon-でドキュメントを書いてみよう&#34;&gt;Markdwon でドキュメントを書いてみよう&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://qiita.com/tbpgr/items/989c6badefff69377da7&#34;&gt;Markdown記法 サンプル集&lt;/a&gt; を参考にさせてもらいながら、 Markdown の記述方法を学びましょう&lt;/p&gt;
+&lt;p&gt;＋α で Hugo の記事を作成する際に必要になる「メタデータ」の記載方法は以下のようになります。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-md&#34; data-lang=&#34;md&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;title: &amp;#34;タイトル名を書きます&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;date: 2022-09-08
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ドキュメントの冒頭に&amp;#34;---&amp;#34;で囲んだ範囲に、yaml形式(ざっくりいうとパラメータと値を : で区切って表現する形式)でメタ情報を記載します！
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;自由練習１好きに-markdown-を書いてweb-サイトに記事を追加してみましょう&#34;&gt;自由練習１：好きに Markdown を書いて、Web サイトに記事を追加してみましょう&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;拡張子.mdでファイルを新規に作成します。&lt;/li&gt;
+&lt;li&gt;冒頭に title と date のメタデータを書いて保存します。&lt;/li&gt;
+&lt;li&gt;ブラウザで「&lt;a href=&#34;http://localhost:1313/hugo-sample/&#34;&gt;http://localhost:1313/hugo-sample/&lt;/a&gt;」を開いて記事が追加されていることを確認します&lt;/li&gt;
+&lt;li&gt;あとは自由に Markdown で記事を書いてみてください&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;githubaction-で作業を自動化してみよう&#34;&gt;GitHubAction で作業を自動化してみよう&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://qiita.com/Teach/items/d2c4d7bec98228df1807&#34;&gt;Qiita GitHub ActionsでHello World&lt;/a&gt;を参考にさせてもらいながら、GitHub Actionsを動かしてみましょう。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;参考：
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.github.com/ja/actions/learn-github-actions/understanding-github-actions&#34;&gt;GitHub Actionsについて学ぶ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.github.com/ja/actions/using-workflows/workflow-syntax-for-github-actions&#34;&gt;GitHub Actionsのワークフロー構文&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/marketplace?type=actions&#34;&gt;GitHub Marketplace&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;自由練習２任意のブランチにpush時にソースコードを取得checkoutするactionsを呼び好きなlinuxコマンドを実行させてみよう&#34;&gt;自由練習２：任意のブランチにPush時にソースコードを取得(checkout)するActionsを呼び、好きなLinuxコマンドを実行させてみよう&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;helloworld.yml&lt;/code&gt;の&lt;code&gt;on&lt;/code&gt;以下を変更します&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;on&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;- &lt;span style=&#34;color:#000&#34;&gt;workflow_dispatch&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;- &lt;span style=&#34;color:#000&#34;&gt;&amp;lt;ブランチPushイベント&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;参考：&lt;a href=&#34;https://docs.github.com/ja/actions/using-workflows/events-that-trigger-workflows&#34;&gt;ワークフローをトリガーするイベント&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;lsquo;steps&amp;rsquo;以下を自由に変更します&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;steps&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;- &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;run&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;echo &amp;#34;Hello World!&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;- &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;uses&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;&amp;lt;アクション&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;with&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;&amp;lt;呼び出すアクションに応じて指定する&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;- &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;run&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;&amp;lt;好きなlinuxコマンド&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;hugo-の設定を変更してweb-サイトコンテンツをカスタマイズしてみよう&#34;&gt;Hugo の設定を変更して、Web サイトコンテンツをカスタマイズしてみよう&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Hugo の設定ファイルを変更してみよう（&lt;a href=&#34;https://www.docsy.dev/docs/get-started/basic-configuration/&#34;&gt;参考&lt;/a&gt; ）&lt;/li&gt;
+&lt;li&gt;layouts にファイルを作成して theme を上書きしてみよう（&lt;a href=&#34;https://ja.takp.me/posts/how-to-customize-the-hugo-themes/&#34;&gt;参考&lt;/a&gt;）&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
