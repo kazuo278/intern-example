@@ -4,21 +4,8 @@ title = "My New Hugo Site"
 # 利用するテーマ
 theme = ["docsy"]
 
-# MD変換時に更新日等の情報を取得する
-enableGitInfo = false
-
 # デフォルトの言語設定
 defaultContentLanguage = "ja"
-
-# コードのシンタックスハイライトに関わる設定
-# Highlighting config
-pygmentsCodeFences = true
-pygmentsUseClasses = true
-# Use the new Chroma Go highlighter in Hugo.
-pygmentsUseClassic = false
-#pygmentsOptions = "linenos=table"
-# See https://help.farbox.com/pygments.html
-pygmentsStyle = "tango"
 
 [markup]
   [markup.goldmark]
@@ -30,38 +17,12 @@ pygmentsStyle = "tango"
       # Uncomment if you want your chosen highlight style used for code blocks without a specified language
       guessSyntax = "true"
 
-# 画像処理の仕方に関わる設定
-[imaging]
-resampleFilter = "CatmullRom"
-quality = 75
-anchor = "smart"
-
 # フッターに表示されるcopyrightの設定
 [params]
 copyright = "Markdown-Hugo-Pages"
-#privacy_policy = "https://policies.google.com/privacy"
-
-# Prismを使ったSyntaxハイライトと、コピーボタンを有効化する設定
-# @TODO Dockerfileをハイライトできないの厳しいので、後々拡張する
-# https://www.docsy.dev/docs/adding-content/lookandfeel/#extending-prism-for-additional-languages-or-plugins
-# Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = true
-
-# 検索機能の設定（Local Search（javascriptを用いた検索）を有効にする）
-# Enable Algolia DocSearch
-algolia_docsearch = false
-# Enable Lunr.js offline search
-offlineSearch = false
-
-# 独自にCSSを読み込ませる設定
-customCSS = ["css/custom-font.css"]
-
 # ユーザインターフェース（サイドバー、パンくずリスト、検索機能、ロゴ、フッター）に関わる設定
 [params.ui]
-# Enable to show the side bar menu in its compact state.
-# sidebar_menu_compact = true
-sidebar_menu_foldable = true
-# ul_show = 1
 #  Set to true to disable breadcrumb navigation.
 breadcrumb_disable = false
 #  Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
@@ -70,114 +31,3 @@ sidebar_search_disable = true
 navbar_logo = true
 # Set to true to disable the About link in the site footer
 footer_about_disable = true
-
-################## 以下、利用しない設定 ####################################
-
-## 記事(_index.md以外)のLinkを変更できる（/docs/2017/01/15/xxxx）
-## Configure how URLs look like per section.
-#[permalinks]
-#docs = "/:section/:year/:month/:day/:slug/"
-
-## インターネットからアクセスしないのでSEO対策(robots.txt)は不要
-# enableRobotsTXT = false
-# Google Custom Search Engine ID. Remove or comment out to disable search.
-# gcs_engine_id = "d72aa9b2712488cc3"
-#[services]
-#[services.googleAnalytics]
-## Comment out the next line to disable GA tracking. Also disables the feature described in [params.ui.feedback].
-#id = "UA-00000000-0"
-
-## バージョン設定をする際に有効化する
-## Menu title if your navbar has a versions selector to access old versions of your site.
-## This menu appears only if you have at least one [params.versions] set.
-#version_menu = "Releases"
-#
-## Flag used in the "version-banner" partial to decide whether to display a
-## banner on every page indicating that this is an archived version of the docs.
-## Set this flag to "true" if you want to display the banner.
-#archived_version = false
-#
-## The version number for the version of the docs represented in this doc set.
-## Used in the "version-banner" partial to display a version number for the
-## current doc set.
-#version = "0.0"
-#
-## A link to latest version of the docs. Used in the "version-banner" partial to
-## point people to the main doc site.
-#url_latest_version = "https://example.com"
-
-# Gitに関わる機能（サイドバーにページの新規作成、編集、イシュー作成機能を追加）を利用する際に有効化する
-## Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-#github_repo = "https://github.com/google/docsy-example"
-## An optional link to a related project repo. For example, the sibling repository where your product code lives.
-#github_project_repo = "https://github.com/google/docsy"
-# Specify a value here if your content directory is not in your repo's root directory
-# github_subdir = ""
-# Uncomment this if you have a newer GitHub repo with "main" as the default branch,
-# or specify a new value if you want to reference another branch in your GitHub links
-# github_branch= "main"
-
-## 読了時間を追加する設定（面白そうだが、検証する時間がないので未設定）
-## Adds a reading time to the top of each doc.
-## If you want this feature, but occasionally need to remove the Reading time from a single page,
-## add "hide_readingtime: true" to the page's front matter
-#[params.ui.readingtime]
-#enable = false
-
-# Feedback機能を追加する機能（Google Analyticsの機能を利用）
-# Adds a H2 section titled "Feedback" to the bottom of each doc. The responses are sent to Google Analytics as events.
-# This feature depends on [services.googleAnalytics] and will be disabled if "services.googleAnalytics.id" is not set.
-# If you want this feature, but occasionally need to remove the "Feedback" section from a single page,
-## add "hide_feedback: true" to the page's front matter.
-#[params.ui.feedback]
-#enable = true
-## The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
-#yes = 'Glad to hear it! Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
-#no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
-
-# SNS系のリンクをフッターに追加する機能
-#[params.links]
-## End user relevant links. These will show up on left side of footer and in the community page if you have one.
-#[[params.links.user]]
-#	name = "User mailing list"
-#	url = "https://example.org/mail"
-#	icon = "fa fa-envelope"
-#        desc = "Discussion and help from your fellow users"
-#[[params.links.user]]
-#	name ="Twitter"
-#	url = "https://example.org/twitter"
-#	icon = "fab fa-twitter"
-#        desc = "Follow us on Twitter to get the latest news!"
-#[[params.links.user]]
-#	name = "Stack Overflow"
-#	url = "https://example.org/stack"
-#	icon = "fab fa-stack-overflow"
-#        desc = "Practical questions and curated answers"
-## Developer relevant links. These will show up on right side of footer and in the community page if you have one.
-#[[params.links.developer]]
-#	name = "GitHub"
-#	url = "https://github.com/google/docsy"
-#	icon = "fab fa-github"
-#        desc = "Development takes place here!"
-#[[params.links.developer]]
-#	name = "Slack"
-#	url = "https://example.org/slack"
-#	icon = "fab fa-slack"
-#        desc = "Chat with other project developers"
-#[[params.links.developer]]
-#	name = "Developer mailing list"
-#	url = "https://example.org/mail"
-#	icon = "fa fa-envelope"
-#        desc = "Discuss development issues around the project"
-
-## Configuration for BlackFriday markdown parser: https://github.com/russross/blackfriday
-#[blackfriday]
-#plainIDAnchors = true
-#hrefTargetBlank = true
-#angledQuotes = false
-#latexDashes = true
-
-# サイドバーに表示されるプリント機能の設定
-# Comment out if you don't want the "print entire section" link enabled.
-# [outputs]
-# section = ["HTML", "print"]
