@@ -25,7 +25,10 @@ weight: 30
 
 ### Hugoドキュメントのビルド
 
-- commandオプションで`-b https://<ユーザ名>.github.io/<リポジトリ名>`指定が必要
+- hugoコマンドのオプションで`-b https://<ユーザ名>.github.io/<リポジトリ名>`指定が必要
+  - 前提
+    - `hugo server`ではmdがリアルタイムでレンダリングされる
+    - `hugo`のみで実行すると静的サイトが`public`ディレクトリ配下に生成される。
   - 理由
     - ローカルでのbaseURLはconfig.tomlで`\`が指定されている。
     - しかし、GitHub Pagesに公開するとURLが`https://<ユーザ名>.github.io/<リポジトリ名>`となるため、baseURLを明示的に合わせる必要がある
