@@ -39,8 +39,8 @@ submodulesオプションでrecursive指定が必要
 
 trueでは、１階層のサブモジ …">
 <meta property="og:title" content="CICD" />
-<meta property="og:description" content="CICD 実現したこと mainブランチPush時に以下を実行 checkout hugoドキュメントのビルド GitHub Pagesに公開 ハマりそうなポイント checkout submodulesオプションでrecursive指定が必要 理由 trueでは、１階層のサブモジュールしかひっぱってこないっぽい。 利用するテーマがさらに別のサブモジュールを参照している場合はrecursiveが指定必要。 想定される事象 github actionsで、テーマが参照するリソースが存在しない旨のエラーがでる Hugoドキュメントのビルド commandオプションで-b https://&lt;ユーザ名&gt;.github.io/&lt;リポジトリ名&gt;指定が必要
-理由 ローカルでのbaseURLはconfig.tomlで\が指定されている。 しかし、GitHub Pagesに公開するとURLがhttps://&lt;ユーザ名&gt;.github.io/&lt;リポジトリ名&gt;となるため、baseURLを明示的に合わせる必要がある 想定される事象 GitHub Pagesでページ遷移できない。（404） imageオプションでは、ext-xxxという名前のイメージを使う
+<meta property="og:description" content="CICD 実現したこと mainブランチPush時に以下を実行 checkout hugoドキュメントのビルド GitHub Pagesに公開 ハマりそうなポイント checkout submodulesオプションでrecursive指定が必要 理由 trueでは、１階層のサブモジュールしかひっぱってこないっぽい。 利用するテーマがさらに別のサブモジュールを参照している場合はrecursiveが指定必要。 想定される事象 github actionsで、テーマが参照するリソースが存在しない旨のエラーがでる Hugoドキュメントのビルド hugoコマンドのオプションで-b https://&lt;ユーザ名&gt;.github.io/&lt;リポジトリ名&gt;指定が必要
+前提 hugo serverではmdがリアルタイムでレンダリングされる hugoのみで実行すると静的サイトがpublicディレクトリ配下に生成される。 理由 ローカルでのbaseURLはconfig.tomlで\が指定されている。 しかし、GitHub Pagesに公開するとURLがhttps://&lt;ユーザ名&gt;.github.io/&lt;リポジトリ名&gt;となるため、baseURLを明示的に合わせる必要がある 想定される事象 GitHub Pagesでページ遷移できない。（404） imageオプションでは、ext-xxxという名前のイメージを使う
 理由 テーマでSCSS、SASSを利用している場合、ビルドができない。 extendedバージョンを利用する必要がある 想定される事象 ビルドに失敗 備考 Dev Containerと同様のイメージが好ましい。(環境に差異が出ない)
 image: ext-ubuntu version: 0.101.0 config.tomlにcanonifyurls = trueを追加する
 理由 これにより、画像の参照先やページ遷移先が絶対パス形式になる 想定される事象 GitHub Pagesから画像参照できない（404） 詳細は未確認だが、Shortcode 方式で画像参照、かつ、basuURLを指定すると、html描画後の画像のパスにbaseURLが反映されていないことがあった 前提条件 baseURL=https://&lt;ユーザ名&gt;.github.io/&lt;リポジトリ名&gt;/ canonifyurls = false(未定義) 期待する値 https://&lt;ユーザ名&gt;.github.io/&lt;リポジトリ名&gt;/images/xxxx.png 実際の値 https://&lt;ユーザ名&gt;.github.io/images/xxxx.png 備考 ローカルで動作確認するときもGitHub Pagesに公開するときと合わせて、以下のコマンドで起動すると良さそう。
@@ -51,18 +51,18 @@ $ hudo -b http://localhost:1313/&lt;リポジトリ名&gt;/ server " />
 <meta property="article:modified_time" content="2022-09-02T05:42:11+00:00" />
 
 <meta itemprop="name" content="CICD">
-<meta itemprop="description" content="CICD 実現したこと mainブランチPush時に以下を実行 checkout hugoドキュメントのビルド GitHub Pagesに公開 ハマりそうなポイント checkout submodulesオプションでrecursive指定が必要 理由 trueでは、１階層のサブモジュールしかひっぱってこないっぽい。 利用するテーマがさらに別のサブモジュールを参照している場合はrecursiveが指定必要。 想定される事象 github actionsで、テーマが参照するリソースが存在しない旨のエラーがでる Hugoドキュメントのビルド commandオプションで-b https://&lt;ユーザ名&gt;.github.io/&lt;リポジトリ名&gt;指定が必要
-理由 ローカルでのbaseURLはconfig.tomlで\が指定されている。 しかし、GitHub Pagesに公開するとURLがhttps://&lt;ユーザ名&gt;.github.io/&lt;リポジトリ名&gt;となるため、baseURLを明示的に合わせる必要がある 想定される事象 GitHub Pagesでページ遷移できない。（404） imageオプションでは、ext-xxxという名前のイメージを使う
+<meta itemprop="description" content="CICD 実現したこと mainブランチPush時に以下を実行 checkout hugoドキュメントのビルド GitHub Pagesに公開 ハマりそうなポイント checkout submodulesオプションでrecursive指定が必要 理由 trueでは、１階層のサブモジュールしかひっぱってこないっぽい。 利用するテーマがさらに別のサブモジュールを参照している場合はrecursiveが指定必要。 想定される事象 github actionsで、テーマが参照するリソースが存在しない旨のエラーがでる Hugoドキュメントのビルド hugoコマンドのオプションで-b https://&lt;ユーザ名&gt;.github.io/&lt;リポジトリ名&gt;指定が必要
+前提 hugo serverではmdがリアルタイムでレンダリングされる hugoのみで実行すると静的サイトがpublicディレクトリ配下に生成される。 理由 ローカルでのbaseURLはconfig.tomlで\が指定されている。 しかし、GitHub Pagesに公開するとURLがhttps://&lt;ユーザ名&gt;.github.io/&lt;リポジトリ名&gt;となるため、baseURLを明示的に合わせる必要がある 想定される事象 GitHub Pagesでページ遷移できない。（404） imageオプションでは、ext-xxxという名前のイメージを使う
 理由 テーマでSCSS、SASSを利用している場合、ビルドができない。 extendedバージョンを利用する必要がある 想定される事象 ビルドに失敗 備考 Dev Containerと同様のイメージが好ましい。(環境に差異が出ない)
 image: ext-ubuntu version: 0.101.0 config.tomlにcanonifyurls = trueを追加する
 理由 これにより、画像の参照先やページ遷移先が絶対パス形式になる 想定される事象 GitHub Pagesから画像参照できない（404） 詳細は未確認だが、Shortcode 方式で画像参照、かつ、basuURLを指定すると、html描画後の画像のパスにbaseURLが反映されていないことがあった 前提条件 baseURL=https://&lt;ユーザ名&gt;.github.io/&lt;リポジトリ名&gt;/ canonifyurls = false(未定義) 期待する値 https://&lt;ユーザ名&gt;.github.io/&lt;リポジトリ名&gt;/images/xxxx.png 実際の値 https://&lt;ユーザ名&gt;.github.io/images/xxxx.png 備考 ローカルで動作確認するときもGitHub Pagesに公開するときと合わせて、以下のコマンドで起動すると良さそう。
 $ hudo -b http://localhost:1313/&lt;リポジトリ名&gt;/ server "><meta itemprop="datePublished" content="2022-09-02T05:42:11+00:00" />
 <meta itemprop="dateModified" content="2022-09-02T05:42:11+00:00" />
-<meta itemprop="wordCount" content="66">
+<meta itemprop="wordCount" content="70">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="CICD"/>
-<meta name="twitter:description" content="CICD 実現したこと mainブランチPush時に以下を実行 checkout hugoドキュメントのビルド GitHub Pagesに公開 ハマりそうなポイント checkout submodulesオプションでrecursive指定が必要 理由 trueでは、１階層のサブモジュールしかひっぱってこないっぽい。 利用するテーマがさらに別のサブモジュールを参照している場合はrecursiveが指定必要。 想定される事象 github actionsで、テーマが参照するリソースが存在しない旨のエラーがでる Hugoドキュメントのビルド commandオプションで-b https://&lt;ユーザ名&gt;.github.io/&lt;リポジトリ名&gt;指定が必要
-理由 ローカルでのbaseURLはconfig.tomlで\が指定されている。 しかし、GitHub Pagesに公開するとURLがhttps://&lt;ユーザ名&gt;.github.io/&lt;リポジトリ名&gt;となるため、baseURLを明示的に合わせる必要がある 想定される事象 GitHub Pagesでページ遷移できない。（404） imageオプションでは、ext-xxxという名前のイメージを使う
+<meta name="twitter:description" content="CICD 実現したこと mainブランチPush時に以下を実行 checkout hugoドキュメントのビルド GitHub Pagesに公開 ハマりそうなポイント checkout submodulesオプションでrecursive指定が必要 理由 trueでは、１階層のサブモジュールしかひっぱってこないっぽい。 利用するテーマがさらに別のサブモジュールを参照している場合はrecursiveが指定必要。 想定される事象 github actionsで、テーマが参照するリソースが存在しない旨のエラーがでる Hugoドキュメントのビルド hugoコマンドのオプションで-b https://&lt;ユーザ名&gt;.github.io/&lt;リポジトリ名&gt;指定が必要
+前提 hugo serverではmdがリアルタイムでレンダリングされる hugoのみで実行すると静的サイトがpublicディレクトリ配下に生成される。 理由 ローカルでのbaseURLはconfig.tomlで\が指定されている。 しかし、GitHub Pagesに公開するとURLがhttps://&lt;ユーザ名&gt;.github.io/&lt;リポジトリ名&gt;となるため、baseURLを明示的に合わせる必要がある 想定される事象 GitHub Pagesでページ遷移できない。（404） imageオプションでは、ext-xxxという名前のイメージを使う
 理由 テーマでSCSS、SASSを利用している場合、ビルドができない。 extendedバージョンを利用する必要がある 想定される事象 ビルドに失敗 備考 Dev Containerと同様のイメージが好ましい。(環境に差異が出ない)
 image: ext-ubuntu version: 0.101.0 config.tomlにcanonifyurls = trueを追加する
 理由 これにより、画像の参照先やページ遷移先が絶対パス形式になる 想定される事象 GitHub Pagesから画像参照できない（404） 詳細は未確認だが、Shortcode 方式で画像参照、かつ、basuURLを指定すると、html描画後の画像のパスにbaseURLが反映されていないことがあった 前提条件 baseURL=https://&lt;ユーザ名&gt;.github.io/&lt;リポジトリ名&gt;/ canonifyurls = false(未定義) 期待する値 https://&lt;ユーザ名&gt;.github.io/&lt;リポジトリ名&gt;/images/xxxx.png 実際の値 https://&lt;ユーザ名&gt;.github.io/images/xxxx.png 備考 ローカルで動作確認するときもGitHub Pagesに公開するときと合わせて、以下のコマンドで起動すると良さそう。
@@ -297,8 +297,14 @@ $ hudo -b http://localhost:1313/&lt;リポジトリ名&gt;/ server "/>
 <h3 id="hugoドキュメントのビルド">Hugoドキュメントのビルド</h3>
 <ul>
 <li>
-<p>commandオプションで<code>-b https://&lt;ユーザ名&gt;.github.io/&lt;リポジトリ名&gt;</code>指定が必要</p>
+<p>hugoコマンドのオプションで<code>-b https://&lt;ユーザ名&gt;.github.io/&lt;リポジトリ名&gt;</code>指定が必要</p>
 <ul>
+<li>前提
+<ul>
+<li><code>hugo server</code>ではmdがリアルタイムでレンダリングされる</li>
+<li><code>hugo</code>のみで実行すると静的サイトが<code>public</code>ディレクトリ配下に生成される。</li>
+</ul>
+</li>
 <li>理由
 <ul>
 <li>ローカルでのbaseURLはconfig.tomlで<code>\</code>が指定されている。</li>
