@@ -1,7 +1,9 @@
 name: build and deploy
 on:
   push:
-    branch: [main]
+    branches: 
+      - main
+  workflow_dispatch:
 
 env:
   HUGO_BASEURL: https://kazuo278.github.io/intern-example/
