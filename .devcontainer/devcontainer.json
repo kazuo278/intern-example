@@ -16,7 +16,7 @@
         "terminal.integrated.defaultProfile.linux": "bash (login)"
       },
       "extensions": [
-        "bungcip.better-toml",
+        "tamasfe.even-better-toml",
         "mhutchie.git-graph",
         "coenraads.bracket-pair-colorizer-2",
         "oderwat.indent-rainbow",
