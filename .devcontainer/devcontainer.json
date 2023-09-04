@@ -4,21 +4,25 @@
   "service" : "hugo",
   "workspaceFolder": "/workspace",
   "forwardPorts": [1313],
-  "settings": {
-    "terminal.integrated.profiles.linux":  {
-      "bash (login)": {
-        "path": "bash",
-        "args": ["-l"]
-      }
-    },
-    "terminal.integrated.defaultProfile.linux": "bash (login)"
-  },
-  "extensions": [
-      "bungcip.better-toml",
-      "mhutchie.git-graph",
-      "coenraads.bracket-pair-colorizer-2",
-      "oderwat.indent-rainbow",
-      "shardulm94.trailing-spaces"
-  ],
-  "shutdownAction": "stopCompose"
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.profiles.linux":  {
+          "bash (login)": {
+            "path": "bash",
+            "args": ["-l"]
+          }
+        },
+        "terminal.integrated.defaultProfile.linux": "bash (login)"
+      },
+      "extensions": [
+        "bungcip.better-toml",
+        "mhutchie.git-graph",
+        "coenraads.bracket-pair-colorizer-2",
+        "oderwat.indent-rainbow",
+        "shardulm94.trailing-spaces"
+    ],
+    "shutdownAction": "stopCompose"
+    }
+  }
 }
